@@ -1,0 +1,66 @@
+@import '@fontsource/ibm-plex-sans/400.css';
+@import '@fontsource/ibm-plex-sans/500.css';
+@import '@fontsource/ibm-plex-sans/700.css';
+@import '@fontsource/ibm-plex-serif/700.css';
+@import '@fontsource/ibm-plex-mono/700.css';
+
+:root {
+	--font-sans: "IBM Plex Sans", sans-serif;
+	--font-serif: "IBM Plex Serif", serif;
+	--color-green: #739368;
+	--color-orange: #f4b71f;
+	--color-text: rgba(0, 0, 0, 0.7);
+	--column-width: 42rem;
+	--column-margin-top: 4rem;
+		--container-margin: 1rem;
+	font-family: var(--font-sans);
+	color: var(--color-text);
+}
+
+body {
+	/* min-height: 100vh; */
+	margin: 0;
+}
+
+h1,
+h2,
+p {
+	font-weight: 400;
+}
+
+p {
+	line-height: 1.5;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+h1 {
+	font-size: 2rem;
+	text-align: center;
+}
+
+h2 {
+	font-size: 1rem;
+}
+
+input,
+button {
+	font-size: inherit;
+	font-family: inherit;
+}
+
+button:focus:not(:focus-visible) {
+	outline: none;
+}
+
+@media (min-width: 720px) {
+	h1 {
+		font-size: 2.4rem;
+	}
+}
